@@ -1,5 +1,5 @@
 /**
- *
+ * 
  */
 package com.bellszhu.elasticsearch.plugin.synonym.analysis;
 
@@ -9,13 +9,14 @@ import java.io.Reader;
 
 /**
  * @author bellszhu
+ *
  */
 public interface SynonymFile {
+	
+	public SynonymMap reloadSynonymMap();
 
-    SynonymMap reloadSynonymMap();
-
-    boolean isNeedReloadSynonymMap();
-
-    Reader getReader();
+	public boolean isNeedReloadSynonymMap();
+	
+	public Reader getReader();
 
 }

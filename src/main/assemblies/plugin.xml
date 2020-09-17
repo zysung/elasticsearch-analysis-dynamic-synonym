@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <assembly>
-    <id>-</id>
+    <id></id>
     <formats>
         <format>zip</format>
     </formats>
@@ -8,15 +8,13 @@
     <files>
         <file>
             <source>${project.basedir}/src/main/resources/plugin-descriptor.properties</source>
-            <filtered>true</filtered>
-        </file>
-        <file>
-            <source>${project.basedir}/src/main/resources/plugin-security.policy</source>
+            <outputDirectory></outputDirectory>
             <filtered>true</filtered>
         </file>
     </files>
     <dependencySets>
         <dependencySet>
+            <outputDirectory>/</outputDirectory>
             <useProjectArtifact>true</useProjectArtifact>
             <useTransitiveFiltering>true</useTransitiveFiltering>
             <excludes>
@@ -24,6 +22,7 @@
             </excludes>
         </dependencySet>
         <dependencySet>
+            <outputDirectory>/</outputDirectory>
             <useProjectArtifact>true</useProjectArtifact>
             <useTransitiveFiltering>true</useTransitiveFiltering>
             <includes>
